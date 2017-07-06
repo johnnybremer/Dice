@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G23a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="QML-wV-sA9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice logo" translatesAutoresizingMaskIntoConstraints="NO" id="vIz-dS-PL1">
+                                <rect key="frame" x="71" y="296" width="272" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="Nw8-vy-ltA"/>
+                                    <constraint firstAttribute="width" constant="272" id="QP8-xz-Ltb"/>
+                                </constraints>
+                            </imageView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Sem1Colon Inc." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsU-Vd-cEO">
+                                <rect key="frame" x="93" y="664" width="240" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xU4-q4-E2n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="QML-wV-sA9" secondAttribute="bottom" id="5nD-cg-kWL"/>
+                            <constraint firstItem="QML-wV-sA9" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="64p-gh-Ptr"/>
+                            <constraint firstItem="QML-wV-sA9" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="F0M-zM-KEN"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="JsU-Vd-cEO" secondAttribute="bottom" constant="42" id="GZf-YW-TaW"/>
+                            <constraint firstAttribute="trailing" secondItem="QML-wV-sA9" secondAttribute="trailing" id="Knb-HY-H35"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JsU-Vd-cEO" secondAttribute="trailing" constant="61" id="fwx-kn-UHV"/>
+                            <constraint firstItem="vIz-dS-PL1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jQz-j8-yDU"/>
+                            <constraint firstItem="vIz-dS-PL1" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="tWm-Vd-6tj"/>
+                            <constraint firstItem="JsU-Vd-cEO" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="73" id="viM-zu-LlW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dice logo" width="512" height="512"/>
+        <image name="newbackground" width="500" height="466"/>
+    </resources>
+</document>
